@@ -2,9 +2,6 @@
 var oddEven = prompt("scegli pari o dispari");
 var yourNumber = parseInt(prompt("scegli un numero da 1 a 5"));
 
-var pari
-var dispari
-
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 function numeroCasuale() {
@@ -16,8 +13,7 @@ function numeroCasuale() {
 var x = numeroCasuale();
 // Sommiamo i due numeri
 var sum = yourNumber + x;
-// console.log(yourNumber);
-// console.log(numeroCasuale());
+console.log(x);
 console.log(sum);
 
 // Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
@@ -32,14 +28,11 @@ function result (sum) {
   }
 }
 
+// Dichiariamo chi ha vinto.
 console.log(result(sum));
 
-if (result(sum)) {
-  // console.log(pari);
+if (result == oddEven) {
+  console.log("hai vinto");
 } else {
-  // console.log(dispari);
+  console.log("hai perso");
 }
-
-// Dichiariamo chi ha vinto.
-var verifica = result(sum);
-// console.log(verifica);
